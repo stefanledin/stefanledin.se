@@ -1,2 +1,42 @@
-@import "../../app/components/foundation/scss/normalize";
-@import "../../app/components/foundation/scss/foundation";
+$font-size-base: 16px;
+@import "../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/bootstrap";
+
+body {
+	background: #F7F9FE;
+}
+
+.container-fluid {
+	max-width: 800px;
+}
+
+article.post {
+	border-bottom: 1px solid #ccc;
+	header .glyphicon {
+		margin-right: 5px;
+	}
+	.metadata {
+		margin: 10px 0;
+	}
+	time,
+	.categories,
+	.tags {
+		display: block;
+		margin: 3px 10px 3px 0;
+		float: left;
+	}
+}
+.post-categories {
+	margin: 0;
+	padding: 0;
+	display: inline;
+}
+.post-title a {
+	color: #333;
+}
+
+.align-left {
+	text-align: left;
+}
+.align-right {
+	text-align: right;
+}
