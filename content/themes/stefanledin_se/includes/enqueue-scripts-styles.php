@@ -2,7 +2,7 @@
 function enqueue_scripts_and_styles () {
 	// wp_enqueue_style( $handle, $src, $deps, $ver, $media );
 	if (ENVIRONMENT == 'production') {
-		wp_enqueue_style( 'stylesheet', get_template_directory_uri().'/assets/css/style.min.css', null, null, null );
+		wp_enqueue_style( 'stylesheet', get_template_directory_uri().'/assets/css/styles.min.css', null, null, null );
 	} else {
 		wp_enqueue_style( 'stylesheet', get_template_directory_uri().'/assets/css/style.css', null, null, null );
 	}
