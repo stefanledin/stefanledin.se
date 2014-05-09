@@ -2,7 +2,7 @@
 define( 'WP_CONTENT_DIR', dirname( __FILE__ ) . '/content' );
 define( 'WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/content' );
 
-if ($_SERVER['HTTP_POST'] == 'HTTP_HOST') {
+if ($_SERVER['HTTP_HOST'] == 'stefanledin.dev') {
 	define('ENVIRONMENT', 'local');
 } else {
 	define('ENVIRONMENT', 'production');
