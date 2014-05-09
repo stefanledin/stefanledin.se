@@ -18,7 +18,7 @@ gulp.task('sass', function() {
 
 gulp.task('styles', function() {
 	return gulp.src([
-			'assets/css/',
+			'assets/css/style.css',
 		])
 		.pipe(concat('styles.css'))
 		.pipe(gulp.dest('assets/css'))
