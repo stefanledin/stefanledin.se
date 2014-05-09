@@ -6580,11 +6580,17 @@ body {
   background: #F7F9FE;
 }
 
+.post-title {
+  margin-top: 0;
+}
+
 .container-fluid {
-  max-width: 800px;
+  max-width: 1100px;
 }
 
 article.post {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #ccc;
 }
 article.post header .glyphicon {
@@ -6611,6 +6617,25 @@ article.post .tags {
   color: #333;
 }
 
+/**
+ * Aside
+ */
+aside ul {
+  margin: 0;
+  padding: 0;
+}
+aside li {
+  padding: 3px 0;
+  list-style: none;
+  border-bottom: 1px solid #ccc;
+}
+aside li:last-child {
+  border-bottom: none;
+}
+
+/**
+ * Helpers
+ */
 .align-left {
   text-align: left;
 }
