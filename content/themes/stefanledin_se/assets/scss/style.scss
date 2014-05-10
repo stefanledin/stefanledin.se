@@ -5,14 +5,80 @@ body {
 	background: #F7F9FE;
 }
 
+/**
+ * Global typografi
+ */
+header[role="banner"] h1 a {
+	color: #333;
+}
 .post-title {
 	margin-top: 0;
 }
+/* WP Markdown har ett stylesheet som måste skrivas över... */
+body.tag {
+	color: #333;
+	h1, h2, h3, h4 {
+		color: #333;
+	}
+}
 
+/**
+ * Global layout
+ */
 .container-fluid {
 	max-width: 1100px;
 }
+section[role="main"] {
+	padding-bottom: 20px;
+}
 
+/**
+ * Fancy animation
+ * Thx to: http://graphicfusiondesign.com/blog/design/creating-fancy-css3-fade-in-animations-on-page-load/
+ */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+body.home {
+	header[role="banner"] {
+		opacity:0;  
+		-webkit-animation:fadeIn ease-in 1;  
+		-moz-animation:fadeIn ease-in 1;
+		animation:fadeIn ease-in 1;
+
+		-webkit-animation-fill-mode:forwards;  
+		-moz-animation-fill-mode:forwards;
+		animation-fill-mode:forwards;
+
+		-webkit-animation-duration:.3s;
+		-moz-animation-duration:.3s;
+		animation-duration:.3s;
+	}
+	section[role="main"],
+	aside {
+		opacity:0;  
+		-webkit-animation:fadeIn ease-in 1;  
+		-moz-animation:fadeIn ease-in 1;
+		animation:fadeIn ease-in 1;
+
+		-webkit-animation-fill-mode:forwards;  
+		-moz-animation-fill-mode:forwards;
+		animation-fill-mode:forwards;
+
+		-webkit-animation-duration:.3s;
+		-moz-animation-duration:.3s;
+		animation-duration:.3s;
+
+		-webkit-animation-delay: .1s;
+		-moz-animation-delay: .1s;
+		animation-delay: .1s;
+	}
+}
+
+/**
+ * Artiklar
+ */
 article.post {
 	margin-bottom: 10px;
 	padding-bottom: 10px;
