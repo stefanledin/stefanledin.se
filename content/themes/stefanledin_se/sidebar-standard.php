@@ -2,7 +2,10 @@
 	<h4>Tags</h4>
 	<ul class="tags-list">
 	<?php
-	$tags = get_tags(array('orderby' => 'count'));
+	$tags = get_tags(array(
+		'orderby' => 'count',
+		'order' => 'DESC'
+	));
 	$tagOutput = '';
 	foreach ($tags as $tag) {
 		$tagOutput .= '<li><a href="'.get_tag_link($tag->term_id).'">'.$tag->name.' ('.$tag->count.')</a></li>';
