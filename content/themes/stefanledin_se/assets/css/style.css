@@ -6581,6 +6581,11 @@ body {
   background: #F7F9FE;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /**
  * Global typografi
  */
